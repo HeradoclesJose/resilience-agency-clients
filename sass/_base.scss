@@ -1,8 +1,24 @@
-@import "./variables";
-@import "./base";
-@import "./buttons";
-@import "./cards";
-@import "./components";
-@import "./footer";
-@import "./header";
-@import "./typography";
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px
+}
+
+body {
+  font-family: $font-primary;
+  color: $color-primary;
+  font-weight: 300;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 8rem calc(90vh - 8rem);
+    grid-auto-rows: min-content;
+    grid-template-columns: [full-start] 16rem [center-start] repeat(3,[col-start] 1fr [col-end]) [center-end] 16rem [full-end];
+}
