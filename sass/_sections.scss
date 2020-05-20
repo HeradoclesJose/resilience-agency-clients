@@ -1,0 +1,36 @@
+.ellipse {
+  grid-column: 1 / -1;
+  background-color: $color-primary;
+  clip-path: ellipse(100% 50% at 50% 50%);
+  padding: 18rem 0 24rem 0;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+
+  &__content {
+    flex: 0 0 45%;
+    color: $color-white;
+  }
+}
+
+.home-cards {
+  grid-column: center-start / center-end;
+
+  position: relative;
+  z-index: 100;
+  top: -10rem;
+
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+
+  > *:not(:last-child) {
+    margin-right: $margin-big;
+  }
+}
+
+.white-space {
+  grid-column: 1/-1;
+  height: 100vh;
+}

@@ -6,6 +6,10 @@
   box-sizing: inherit;
 }
 
+a {
+  outline: 0 !important;
+}
+
 html {
   font-size: 62.5%; // 1rem = 10px
 }
@@ -17,8 +21,10 @@ body {
 }
 
 .container {
-    display: grid;
-    grid-template-rows: 8rem calc(90vh - 8rem);
-    grid-auto-rows: min-content;
-    grid-template-columns: [full-start] 16rem [center-start] repeat(3,[col-start] 1fr [col-end]) [center-end] 16rem [full-end];
+  display: grid;
+  grid-template-rows: 12rem calc(90vh - 10rem);
+  grid-auto-rows: min-content;
+  grid-template-columns:
+    [full-start] 20rem [center-start] repeat(3, [col-start] 1fr [col-end])
+    [center-end] 20rem [full-end];
 }

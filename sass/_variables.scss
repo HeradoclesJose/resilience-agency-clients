@@ -12,12 +12,21 @@ $color-grey-light-2: #4e4e4e33;
 
 //Margins
 $margin-section: 20rem;
-$margin-paragraph: 2rem;
-$margin-buttons: 3rem;
+$margin-small: 2rem;
+$margin-medium: 3.5rem;
+$margin-big: 6rem;
 
-// FONT VARIABLES
-$font-primary: 'Rubik', sans-serif;
+// Font Variable
+$font-primary: "Rubik", sans-serif;
 
-// BREAKPOINTS
+// Breakpoints
 $bp-largest: 75em; // 1200 px
 
+// Transition
+$transition-base: all 0.25s ease-in;
+$transition-fast: all 0.1s ease-in;
+
+// Shadows
+$shadow-btn: 0px 6px 12px $color-grey-dark-2;
+$shadow-video: 0px 0px 12px 8px rgba(66, 65, 65, 0.068);
+$shadow-cards: 0px 5px 12px 5px rgba(66, 65, 65, 0.068);
