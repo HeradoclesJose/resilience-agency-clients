@@ -6,12 +6,20 @@
   margin-bottom: $margin-medium;
 }
 
+.u-margin-bottom-small {
+  margin-bottom: $margin-x-small;
+}
+
 .u-margin-bottom-big {
   margin-bottom: $margin-x-big;
 }
 
 .u-margin-section {
   margin-bottom: $margin-section;
+}
+
+.u-margin-section-top {
+  margin-top: $margin-section;
 }
 
 .bold {

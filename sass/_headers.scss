@@ -64,6 +64,11 @@
     margin-right: auto;
   }
 
+  &__content--1 {
+    margin-right: $margin-section;
+    flex-basis: 40%;
+  }
+
   &__cta {
     margin-top: $margin-small;
     display: flex;
@@ -85,11 +90,23 @@
     border-radius: 25px;
     overflow: hidden;
 
-    max-width: 100%;
-    min-width: 38rem;
+    max-width: 65rem;
+    min-width: 35rem;
     height: auto;
 
     video {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__img {
+    flex-basis: 70%;
+    max-width: 45rem;
+    min-width: 35rem;
+    height: auto;
+
+    img {
       width: 100%;
       height: auto;
     }

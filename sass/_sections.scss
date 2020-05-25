@@ -5,25 +5,28 @@
   padding: 10vh 0 24rem 0;
   color: $color-white;
   @include center;
-}
 
-.home-cards {
-  grid-column: center-start / center-end;
-
-  position: relative;
-  z-index: 100;
-  top: -10rem;
-
-  display: flex;
-  flex-flow: wrap;
-  justify-content: center;
-
-  > *:not(:last-child) {
-    margin-right: $margin-big;
+  &--sub {
+    padding: 10rem 0 15rem;
   }
 }
 
 .centered {
   grid-column: 1 / -1;
   @include center;
+}
+
+.columns {
+  grid-column: center-start / center-end;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+
+  &__half {
+    flex-basis: 40%;
+  }
+
+  &__half:not(:last-child) {
+    margin-right: $margin-medium;
+  }
 }
