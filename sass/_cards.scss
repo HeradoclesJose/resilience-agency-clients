@@ -7,6 +7,7 @@
   align-items: center;
 
   &--home {
+    margin-bottom: $margin-medium;
     position: relative;
     z-index: 100;
     top: -10rem;
@@ -23,6 +24,19 @@
   &__box {
     display: flex;
     margin-bottom: $margin-section;
+  }
+}
+
+.testimonials {
+  grid-column: center-start / center-end;
+  text-align: center;
+
+  &__grid {
+    margin: $margin-x-big 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(45rem, 100%), 1fr));
+    place-content: center;
+    gap: $margin-x-big;
   }
 }
 
@@ -49,6 +63,14 @@
     }
   }
 
+  &--testimonial {
+    text-align: left;
+    padding: $margin-big;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+  }
+
   &__img {
     width: 15rem;
     height: 11rem;
@@ -71,5 +93,9 @@
       width: 100%;
       height: auto;
     }
+  }
+
+  &__info {
+    text-align: right;
   }
 }

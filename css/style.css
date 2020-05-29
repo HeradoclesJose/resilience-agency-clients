@@ -64,6 +64,7 @@ body {
   justify-content: center;
   align-items: center; }
   .cards--home {
+    margin-bottom: 3.5rem;
     position: relative;
     z-index: 100;
     top: -10rem; }
@@ -74,6 +75,16 @@ body {
   .cards__box {
     display: flex;
     margin-bottom: 14rem; }
+
+.testimonials {
+  grid-column: center-start / center-end;
+  text-align: center; }
+  .testimonials__grid {
+    margin: 8rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(45rem, 100%), 1fr));
+    place-content: center;
+    gap: 8rem; }
 
 .card {
   background-color: #ffffff;
@@ -91,6 +102,12 @@ body {
     padding: 2rem 7rem; }
     .card--media--1 {
       max-width: 65rem; }
+  .card--testimonial {
+    text-align: left;
+    padding: 6rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between; }
   .card__img {
     width: 15rem;
     height: 11rem;
@@ -105,6 +122,8 @@ body {
     .card__background img {
       width: 100%;
       height: auto; }
+  .card__info {
+    text-align: right; }
 
 .ellipse {
   grid-column: 1 / -1;
@@ -198,6 +217,9 @@ body {
     height: 100%;
     width: auto;
     margin-right: auto; }
+  .navigation__img {
+    height: 100%;
+    width: auto; }
   .navigation__menu {
     display: flex;
     align-items: center;
@@ -223,6 +245,16 @@ body {
     .navigation__link:hover::after {
       background-color: #e74c3c;
       width: 100%; }
+    .navigation__link--current {
+      color: #e74c3c; }
+      .navigation__link--current::after {
+        display: block;
+        content: "";
+        height: 2px;
+        width: 2px;
+        margin-top: 4px;
+        background-color: #e74c3c;
+        width: 100%; }
 
 .header {
   grid-row: 2 / 3;
@@ -235,6 +267,9 @@ body {
   .header__content--1 {
     margin-right: 14rem;
     flex-basis: 40%; }
+  .header__content--2 {
+    margin-right: 14rem;
+    flex-basis: 50%; }
   .header__cta {
     margin-top: 2rem;
     display: flex;
@@ -267,12 +302,6 @@ body {
 .u-margin-top {
   margin-top: 3.5rem; }
 
-.u-margin-bottom {
-  margin-bottom: 3.5rem; }
-
-.u-margin-bottom-small {
-  margin-bottom: 1rem; }
-
 .u-margin-bottom-big {
   margin-bottom: 8rem; }
 
@@ -282,38 +311,49 @@ body {
 .u-margin-section-top {
   margin-top: 14rem; }
 
-.bold {
-  font-weight: 700; }
-
-.heading--1 {
+h1 {
   margin: 0;
   font-size: 4rem;
   font-weight: 400;
   line-height: 1; }
-  .heading--1--main {
-    font-size: 6rem;
-    font-weight: 700; }
 
-.heading--3 {
+h3 {
   font-size: 5.5rem;
-  margin: 2rem; }
+  margin: 3.5rem; }
 
-.heading--4 {
+h4 {
   line-height: 1;
-  font-size: 4rem; }
+  font-size: 4rem;
+  margin-bottom: 1rem; }
 
-.heading--5 {
+h6 {
   font-size: 1.6rem; }
 
 p {
   font-weight: 300;
   font-size: 2.2rem;
   margin-bottom: 2rem; }
-  p b,
-  p .bold {
-    font-weight: 700; }
-  p .big {
-    font-size: 3.2rem; }
+
+b {
+  font-weight: 700; }
+
+.main {
+  font-size: 6rem;
+  font-weight: 700; }
+
+.big {
+  font-size: 3.2rem; }
+
+.name {
+  font-size: 1.4rem;
+  font-weight: 700; }
+
+.work-tittle {
+  font-size: 1.2rem; }
+
+.date {
+  color: #4e4e4e;
+  font-size: 1rem; }
 
 .flag {
   display: inline-block;

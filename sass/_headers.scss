@@ -12,6 +12,11 @@
     margin-right: auto;
   }
 
+  &__img {
+    height: 100%;
+    width: auto;
+  }
+
   &__menu {
     display: flex;
     align-items: center;
@@ -32,11 +37,7 @@
     transition: $transition-base;
 
     &::after {
-      display: block;
-      content: "";
-      height: 2px;
-      width: 2px;
-      margin-top: 4px;
+      @include line;
       background-color: transparent;
       transition: $transition-base;
     }
@@ -48,6 +49,16 @@
     &:hover::after {
       background-color: $color-secondary;
       width: 100%;
+    }
+
+    &--current {
+      color: $color-secondary;
+
+      &::after {
+        @include line;
+        background-color: $color-secondary;
+        width: 100%;
+      }
     }
   }
 }
@@ -67,6 +78,11 @@
   &__content--1 {
     margin-right: $margin-section;
     flex-basis: 40%;
+  }
+
+  &__content--2 {
+    margin-right: $margin-section;
+    flex-basis: 50%;
   }
 
   &__cta {

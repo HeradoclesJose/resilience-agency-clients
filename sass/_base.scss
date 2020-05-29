@@ -28,3 +28,11 @@ body {
     [full-start] 20rem [center-start] repeat(3, [col-start] 1fr [col-end])
     [center-end] 20rem [full-end];
 }
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
