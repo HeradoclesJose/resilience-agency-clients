@@ -36,7 +36,7 @@
     display: grid;
     grid-template-columns: repeat(
       auto-fit,
-      minmax(unquote ("min(42rem, 100%)"), 1fr)
+      minmax(calc(min(45rem, 100%)), 1fr)
     );
     place-content: center;
     gap: $margin-x-big;

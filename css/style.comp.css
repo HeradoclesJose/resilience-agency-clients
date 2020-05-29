@@ -82,7 +82,7 @@ body {
   .testimonials__grid {
     margin: 8rem 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(unquote "min(42rem, 100%)", 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(calc(min(45rem, 100%)), 1fr));
     place-content: center;
     gap: 8rem; }
 
