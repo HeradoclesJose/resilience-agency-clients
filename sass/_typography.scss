@@ -1,17 +1,24 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+}
+
 h1 {
   margin: 0;
   font-size: 4rem;
   font-weight: 400;
-  line-height: 1;
 }
 
 h3 {
   font-size: 5.5rem;
-  margin: $margin-medium;
+  margin-bottom: $margin-medium;
 }
 
 h4 {
-  line-height: 1;
   font-size: 4rem;
   margin-bottom: $margin-x-small;
 }
@@ -37,6 +44,7 @@ b {
 
 .big {
   font-size: 3.2rem;
+  line-height: 1;
 }
 
 .name {
