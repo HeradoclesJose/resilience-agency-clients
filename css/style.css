@@ -366,7 +366,7 @@ b {
   display: inline-block;
   text-align: center;
   padding: 3px 3rem;
-  margin: 0;
+  margin-bottom: 2rem;
   color: #ffffff;
   background-color: #e74c3c;
   border-radius: 25px;
