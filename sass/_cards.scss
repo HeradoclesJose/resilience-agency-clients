@@ -34,7 +34,10 @@
   &__grid {
     margin: $margin-x-big 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(45rem, 100%), 1fr));
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(unquote ("min(42rem, 100%)"), 1fr)
+    );
     place-content: center;
     gap: $margin-x-big;
   }
