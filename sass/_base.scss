@@ -37,7 +37,7 @@ body {
     [center-end] 20rem [full-end];
 
   @media only screen and (max-width: $bp-large) {
-    grid-template-rows: 12rem max-content;
+    grid-template-rows: 12rem min-content;
     grid-template-columns:
       [full-start] 8rem [center-start] repeat(3, [col-start] 1fr [col-end])
       [center-end] 8rem [full-end];

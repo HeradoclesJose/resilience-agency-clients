@@ -29,7 +29,7 @@ body {
   grid-template-columns: [full-start] 20rem [center-start] repeat(3, [col-start] 1fr [col-end]) [center-end] 20rem [full-end]; }
   @media only screen and (max-width: 75em) {
     .container {
-      grid-template-rows: 12rem max-content;
+      grid-template-rows: 12rem min-content;
       grid-template-columns: [full-start] 8rem [center-start] repeat(3, [col-start] 1fr [col-end]) [center-end] 8rem [full-end]; } }
   @media only screen and (max-width: 65.62em) {
     .container {
@@ -291,9 +291,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center; }
+  @media only screen and (max-width: 75em) {
+    .header {
+      margin: 8rem 0; } }
   @media only screen and (max-width: 65.62em) {
     .header {
-      margin: 8rem 0;
       flex-direction: column;
       align-items: center;
       justify-items: center; } }
@@ -320,7 +322,6 @@ body {
     border-radius: 25px;
     overflow: hidden;
     max-width: 65rem;
-    min-width: 45rem;
     height: auto; }
     @media only screen and (max-width: 65.62em) {
       .header__video {
