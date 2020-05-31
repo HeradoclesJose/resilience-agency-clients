@@ -29,10 +29,8 @@ body {
   grid-template-columns: [full-start] 20rem [center-start] repeat(3, [col-start] 1fr [col-end]) [center-end] 20rem [full-end]; }
   @media only screen and (max-width: 75em) {
     .container {
+      grid-template-rows: 12rem max-content;
       grid-template-columns: [full-start] 8rem [center-start] repeat(3, [col-start] 1fr [col-end]) [center-end] 8rem [full-end]; } }
-  @media only screen and (max-width: 65.62em) and (max-height: 50em) {
-    .container {
-      grid-template-rows: 12rem min-content; } }
   @media only screen and (max-width: 65.62em) {
     .container {
       grid-template-columns: [full-start] 6rem [center-start] repeat(3, [col-start] 1fr [col-end]) [center-end] 6rem [full-end]; } }
