@@ -253,6 +253,9 @@ body {
     display: flex;
     align-items: center;
     font-weight: 400; }
+    @media only screen and (max-width: 50em) {
+      .navigation__menu {
+        display: none; } }
   .navigation__item {
     font-size: 1.9rem; }
     .navigation__item:not(:last-child) {
