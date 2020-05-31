@@ -123,8 +123,9 @@
     max-width: 65rem;
     height: auto;
 
-    @media only screen and (max-width: $bp-x-medium) {
-      margin-top: $margin-big;
+    @media only screen and (max-width: $bp-medium) {
+      margin-top: 3rem;
+      margin-bottom: 4rem;
       flex-basis: auto;
     }
 

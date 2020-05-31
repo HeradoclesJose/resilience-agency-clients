@@ -22,9 +22,20 @@
   &__content {
     display: flex;
     justify-content: space-between;
+
+    @media only screen and (max-width: $bp-medium) {
+      flex-flow: wrap;
+    }
   }
 
   &__column {
+    @media only screen and (max-width: $bp-medium) {
+      margin-top: 3rem;
+      :not(:last-of-type) {
+        margin-right: 4rem;
+      }
+    }
+
     h5:first-of-type {
       margin-bottom: $margin-x-small;
     }

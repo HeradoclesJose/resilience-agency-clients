@@ -201,6 +201,14 @@ body {
   .footer__content {
     display: flex;
     justify-content: space-between; }
+    @media only screen and (max-width: 50em) {
+      .footer__content {
+        flex-flow: wrap; } }
+  @media only screen and (max-width: 50em) {
+    .footer__column {
+      margin-top: 3rem; }
+      .footer__column :not(:last-of-type) {
+        margin-right: 4rem; } }
   .footer__column h5:first-of-type {
     margin-bottom: 1rem; }
   .footer__column h5:first-of-type::after {
@@ -326,9 +334,10 @@ body {
     overflow: hidden;
     max-width: 65rem;
     height: auto; }
-    @media only screen and (max-width: 65.62em) {
+    @media only screen and (max-width: 50em) {
       .header__video {
-        margin-top: 6rem;
+        margin-top: 3rem;
+        margin-bottom: 4rem;
         flex-basis: auto; } }
     .header__video video {
       width: 100%;
