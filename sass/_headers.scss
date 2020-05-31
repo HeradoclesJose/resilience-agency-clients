@@ -71,6 +71,13 @@
   align-items: center;
   justify-content: center;
 
+  @media only screen and (max-width: $bp-x-medium) {
+    margin: $margin-x-big 0;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+
   &__content {
     margin-right: auto;
   }
@@ -107,8 +114,13 @@
     overflow: hidden;
 
     max-width: 65rem;
-    min-width: 35rem;
+    min-width: 45rem;
     height: auto;
+
+    @media only screen and (max-width: $bp-x-medium) {
+      margin-top: $margin-big;
+      flex-basis: auto;
+    }
 
     video {
       width: 100%;

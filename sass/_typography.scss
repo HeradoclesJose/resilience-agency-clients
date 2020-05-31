@@ -23,7 +23,7 @@ h4 {
   margin-bottom: $margin-x-small;
 }
 
-h6 {
+h5 {
   font-size: 1.6rem;
 }
 
@@ -40,6 +40,10 @@ b {
 .main {
   font-size: 6rem;
   font-weight: 700;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 5.5rem;
+  }
 }
 
 .big {

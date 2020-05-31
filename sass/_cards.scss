@@ -2,19 +2,14 @@
   grid-column: center-start / center-end;
 
   display: flex;
-  flex-flow: wrap;
   justify-content: center;
   align-items: center;
 
   &--home {
-    margin-bottom: $margin-medium;
+    flex-wrap: wrap;
     position: relative;
     z-index: 100;
-    top: -10rem;
-
-    > *:not(:last-child) {
-      margin-right: $margin-big;
-    }
+    top: -$margin-section;
   }
 
   &--img {
@@ -53,13 +48,14 @@
     text-align: center;
     min-width: 30rem;
     padding: 6rem 1rem 7rem 1rem;
+    margin: $margin-big $margin-medium 0 $margin-medium;
   }
 
   &--media {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 2rem 7rem;
+    padding: 4rem 7rem;
 
     &--1 {
       max-width: 65rem;

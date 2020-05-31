@@ -18,12 +18,20 @@ $margin-small: 2rem;
 $margin-medium: 3.5rem;
 $margin-big: 6rem;
 $margin-x-big: 8rem;
+$margin-xxl: 10rem;
 
 // Font Variable
 $font-primary: "Rubik", sans-serif;
 
 // Breakpoints
-$bp-largest: 75em; // 1200 px
+// 1em = 16px
+$bp-x-largest: 93.75em; // 1500 px
+$bp-largest: 84.37em; // 1350 px
+$bp-large: 75em; // 1200 px
+$bp-x-medium: 65.62em; // 1050 px
+$bp-medium: 50em; // 800 px
+$bp-s-medium: 40.62em; // 650 px 
+$bp-small: 31.25em; // 500 px
 
 // Transition
 $transition-base: all 0.25s ease-in;
@@ -43,6 +51,14 @@ $shadow-cards: 0px 5px 12px 5px rgba(66, 65, 65, 0.068);
 
   &__content {
     flex: 0 0 45%;
+
+    @media only screen and (max-width: $bp-large) {
+      flex: 0 0 60%;
+    }
+
+    @media only screen and (max-width: $bp-x-medium) {
+      flex: 0 0 75%;
+    }
   }
 }
 

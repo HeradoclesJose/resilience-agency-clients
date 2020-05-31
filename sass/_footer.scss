@@ -6,6 +6,14 @@
   background-color: $color-primary;
   color: $color-white;
 
+  @media only screen and (max-width: $bp-large) {
+    padding: $margin-section $margin-xxl;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: $margin-section 6rem;
+  }
+
   p {
     font-size: 1.5rem;
     margin-bottom: 0;
