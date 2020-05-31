@@ -19,6 +19,13 @@
   &__box {
     display: flex;
     margin-bottom: $margin-section;
+
+    @media only screen and (max-width: $bp-s-medium) {
+      flex-direction: column;
+      align-items: center;
+
+      margin-bottom: $margin-big;
+    }
   }
 }
 
@@ -91,6 +98,20 @@
     img {
       width: 100%;
       height: auto;
+    }
+
+    @media only screen and (max-width: $bp-s-medium) {
+      max-width: 25rem;
+      min-width: 20rem;
+
+      order: 1;
+      margin-top: 3rem;
+
+      &--left,
+      &--right {
+        margin-left: 0;
+        margin-right: 0;
+      }
     }
   }
 

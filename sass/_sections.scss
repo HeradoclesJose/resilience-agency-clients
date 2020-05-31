@@ -9,6 +9,10 @@
   &--sub {
     padding: 10rem 0 15rem;
   }
+
+  @media only screen and (max-width: $bp-s-medium) {
+    clip-path: ellipse(150% 50% at 50% 50%);
+  }
 }
 
 .centered {
@@ -28,5 +32,10 @@
 
   &__half:not(:last-child) {
     margin-right: $margin-medium;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    flex-direction: column;
+    text-align: center;
   }
 }
