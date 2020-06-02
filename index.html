@@ -63,7 +63,16 @@
           class="navigation__img"
         />
       </a>
-      <ul class="navigation__menu">
+      <a class="navigation__icon" id="js-navigation__icon">
+        <i class="fas fa-bars"></i>
+      </a>
+      <ul class="navigation__menu" id="js-navigation__menu">
+        <li
+          class="navigation__item navigation__item--close"
+          id="js-navigation__close"
+        >
+          <i class="fas fa-times"></i>
+        </li>
         <li class="navigation__item">
           <a href="./views/help.html" class="navigation__link"
             >How we can help
@@ -90,8 +99,14 @@
           </span>
         </h1>
         <div class="header__cta">
-          <a href="#" class="btn btn--full">Book a free meeting</a>
-          <a href="#" class="btn btn--ghost">Watch our video</a>
+          <a href="./media/videos/resilience-video.mp4" class="btn btn--full"
+            >Book a free meeting</a
+          >
+          <a
+            href="https://meetings.hubspot.com/robert246"
+            class="btn btn--ghost"
+            >Watch our video</a
+          >
         </div>
       </div>
       <div class="header__video">
@@ -126,7 +141,7 @@
           applications for the relevant subsidies.
         </p>
         <div class="u-margin-top">
-          <a href="#" class="btn btn--ghost btn--white">
+          <a href="./views/contact.html" class="btn btn--ghost btn--white">
             Build resilience!
           </a>
         </div>
@@ -145,7 +160,7 @@
           and services
         </p>
         <div class="u-margin-top">
-          <a href="#" class="btn btn--ghost">Find out more</a>
+          <a href="./views/about.html" class="btn btn--ghost">Find out more</a>
         </div>
       </div>
       <div class="card card--home">
@@ -160,7 +175,7 @@
           sources of profit
         </p>
         <div class="u-margin-top">
-          <a href="#" class="btn btn--ghost">Get started</a>
+          <a href="./views/contact.html" class="btn btn--ghost">Get started</a>
         </div>
       </div>
       <div class="card card--home">
@@ -177,7 +192,9 @@
           combined business model
         </p>
         <div class="u-margin-top">
-          <a href="#" class="btn btn--ghost">Book a free call</a>
+          <a href="tel:+4915738601350" class="btn btn--ghost"
+            >Book a free call</a
+          >
         </div>
       </div>
     </section>
@@ -289,12 +306,13 @@
           <a href="#" class="footer__link">
             Datenschutz
           </a>
-          <a href="#" class="footer__link">
+          <a href="./views/faq.html" class="footer__link">
             FAQ
           </a>
         </div>
         <p>&copy; Heradocles Jose</p>
       </div>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>

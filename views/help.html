@@ -62,13 +62,21 @@
           class="navigation__img"
         />
       </a>
-      <ul class="navigation__menu">
+      <a class="navigation__icon" id="js-navigation__icon">
+        <i class="fas fa-bars"></i>
+      </a>
+      <ul class="navigation__menu" id="js-navigation__menu">
+        <li
+          class="navigation__item navigation__item--close"
+          id="js-navigation__close"
+        >
+          <i class="fas fa-times"></i>
+        </li>
         <li class="navigation__item">
           <a
-            href="./help.html"
+            href=".help.html"
             class="navigation__link navigation__link--current"
-          >
-            How we can help
+            >How we can help
           </a>
         </li>
         <li class="navigation__item">
@@ -96,7 +104,7 @@
           organizational, and personnel-related matters.
         </p>
         <div class="header__cta">
-          <a href="#" class="btn btn--ghost">Learn more</a>
+          <a href="#info" class="btn btn--ghost">Learn more</a>
         </div>
       </div>
       <div class="header__img">
@@ -115,13 +123,13 @@
           from the BAFA program, which is 100% subsidised.
         </p>
         <div class="u-margin-top">
-          <a href="#" class="btn btn--ghost btn--white">
+          <a href="./contact.html" class="btn btn--ghost btn--white">
             Contact us!
           </a>
         </div>
       </div>
     </section>
-    <section class="columns u-margin-section-top u-margin-bottom-big">
+    <section class="columns u-margin-section-top u-margin-bottom-big" id="info">
       <div class="columns__half">
         <p>
           Consulting firms, religious organizations, agriculture-related
@@ -246,7 +254,10 @@
           yourself and your situation, and we’ll take it from there!
         </p>
         <div class="u-margin-top">
-          <a href="#" class="btn btn--full">
+          <a
+            href="https://meetings.hubspot.com/robert246"
+            class="btn btn--full"
+          >
             Book a free meeting
           </a>
         </div>
@@ -311,12 +322,13 @@
           <a href="#" class="footer__link">
             Datenschutz
           </a>
-          <a href="#" class="footer__link">
+          <a href="./faq.html" class="footer__link">
             FAQ
           </a>
         </div>
         <p>&copy; Heradocles Jose</p>
       </div>
     </footer>
+    <script src="../js/script.js"></script>
   </body>
 </html>

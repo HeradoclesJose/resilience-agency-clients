@@ -17,6 +17,16 @@
     width: auto;
   }
 
+  &__icon {
+    display: none;
+    font-size: 3rem;
+    color: $color-grey-dark-1;
+
+    @media only screen and (max-width: $bp-medium) {
+      display: block;
+    }
+  }
+
   &__menu {
     display: flex;
     align-items: center;
@@ -25,6 +35,22 @@
     @media only screen and (max-width: $bp-medium) {
       display: none;
     }
+
+    &--mobile {
+      display: block;
+      position: fixed;
+      z-index: 1000;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 45vw;
+      background-color: white;
+      box-shadow: $shadow-video;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      text-align: center;
+    }
   }
 
   &__item {
@@ -32,6 +58,27 @@
 
     &:not(:last-child) {
       margin-right: 4rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      margin: 1rem 0;
+
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+    }
+
+    &--close {
+      text-align: right;
+      margin-top: 2rem;
+      margin-right: 3rem !important;
+      display: none;
+      font-size: 3rem;
+      color: $color-grey-dark-1;
+
+      @media only screen and (max-width: $bp-medium) {
+        display: block;
+      }
     }
   }
 
@@ -93,7 +140,7 @@
     margin-right: $margin-section;
     flex-basis: 40%;
 
-    @media only screen and (max-width: $bp-x-medium){
+    @media only screen and (max-width: $bp-x-medium) {
       flex-basis: 100%;
       margin-right: 0;
     }
@@ -102,12 +149,11 @@
   &__content--2 {
     margin-right: $margin-section;
     flex-basis: 50%;
-  
-    @media only screen and (max-width: $bp-x-medium){
+
+    @media only screen and (max-width: $bp-x-medium) {
       flex-basis: 100%;
       margin-right: 0;
     }
-
   }
 
   &__cta {
